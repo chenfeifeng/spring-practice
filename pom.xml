@@ -11,16 +11,9 @@
     <modules>
         <module>web</module>
         <module>service</module>
+        <module>api</module>
+        <module>util</module>
     </modules>
-
-
-    <properties>
-        <httpclient.version>4.4.1</httpclient.version>
-        <spring-jdbc.version>4.2.0.RELEASE</spring-jdbc.version>
-        <junit.version>3.8.1</junit.version>
-        <jedis.version>2.8.1</jedis.version>
-        <spring-data-redis.version>1.7.0.RELEASE</spring-data-redis.version>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
