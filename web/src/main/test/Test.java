@@ -4,7 +4,7 @@ import com.cff.spring.spi.SpiTestApi;
 /**
  * Created by cff on 2017/6/8.
  */
-public class Test2 {
+public class Test {
 
     public static void main(String[] args) {
         SpiTestApi spi = SpiFactory.getSpiFactory();
