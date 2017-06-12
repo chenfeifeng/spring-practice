@@ -14,6 +14,5 @@ public class SpiTest {
         } else {
             System.out.println("null");
         }
-        System.out.println("测试提交");
     }
 }
