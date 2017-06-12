@@ -1,11 +1,12 @@
-import com.cff.spring.spi.SpiFactory;
-import com.cff.spring.spi.SpiTestApi;
+package com.cff.spring.spi;
 
 /**
- * Created by cff on 2017/6/8.
+ * @author cff
+ * @version 1.0
+ * @description @TODO
+ * @date 2017/6/12 下午11:53
  */
-public class Test {
-
+public class SpiTest {
     public static void main(String[] args) {
         SpiTestApi spi = SpiFactory.getSpiFactory();
         if (spi != null) {
@@ -13,6 +14,5 @@ public class Test {
         } else {
             System.out.println("null");
         }
-        System.out.println("测试修改");
     }
 }
