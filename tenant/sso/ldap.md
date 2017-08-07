@@ -19,7 +19,7 @@
 # 技能要求
 需要二次开发人员了解以下知识：  
 
-1. 需要掌握JAVA的SPI开发的基本知识，[参考资料](#JAVASPI)。
+1. 需要掌握JAVA的SPI开发的基本知识，[参考资料](http://kb.uyunsoft.cn/kb/pages/viewpage.action?pageId=27820857)。
 2. 需要了解租户的用户添加（会提供默认实现类）。
 
 
@@ -57,18 +57,18 @@
    + ldap库中获取用户的其他必要信息，并封装成租户的用户类返回其它方法的实现可参考默认实现类。
 3. 如果重新实现了接口，需要修改spi配置文件resources/META-INF /services/uyun.bird.tenant.service.LDAPLoginOperService文件，该文件内容为实现类的名称。 
 
-**<font size=3 color='red' face="黑体">方法的实现可参考默认实现类(LDAPLoginOperService.java 和 LDAPLoginOperServiceImpl.java)</font>。**  
-<font size=3 color='red' face="黑体">
+**方法的实现可参考默认实现类(LDAPLoginOperService.java 和 LDAPLoginOperServiceImpl.java)。**  
+
 该类内可能需要自行实现的需求：
 > 1. **默认的实现类中有几处扩展和注释的代码，开发人员可根据情况修改。**  
 > 2. **由于三方账号的密码的加密方式,所以租户这边ldap登录的时候是以明文形式提交的,需要工程根据现场情况,进行加密处理**
 
-</font>
+
 
 ## 工程打包以及引入租户
 
 1. 将代码实现后的工程打成jar包。
-2. **将jar包，拷入租户生产环境的<font size=4 color='red' face="黑体"> /opt/tenantssolib </font>目录下。**
+2. **将jar包，拷入租户生产环境的/opt/tenantssolib目录下。**
 3. 需要重新启动租户后生效。
 
 
@@ -88,7 +88,7 @@ public User ldapValidation(String userName, String password);
 public void insertNewUser(User user);说明：创建新用户（LDAP验证成功后发现租户数据库中不存在）
 ```
 
-## JAVASPI
+## JAVA SPI说明
 有关spi的概念与使用请参考KB:[JAVA SPI](http://kb.uyunsoft.cn/kb/pages/viewpage.action?pageId=27820857)
 
 
