@@ -19,7 +19,7 @@
 # 技能要求
 需要二次开发人员了解以下知识：  
 
-1. 需要掌握JAVA的SPI开发的基本知识，[参考资料](#5.2)。
+1. 需要掌握JAVA的SPI开发的基本知识，[参考资料](#JAVASPI)。
 2. 需要了解租户的用户添加（会提供默认实现类）。
 
 
@@ -88,7 +88,7 @@ public User ldapValidation(String userName, String password);
 public void insertNewUser(User user);说明：创建新用户（LDAP验证成功后发现租户数据库中不存在）
 ```
 
-## JAVA SPI说明
+## JAVASPI
 有关spi的概念与使用请参考KB:[JAVA SPI](http://kb.uyunsoft.cn/kb/pages/viewpage.action?pageId=27820857)
 
 
