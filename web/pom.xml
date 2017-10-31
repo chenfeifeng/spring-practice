@@ -97,6 +97,12 @@
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
         </dependency>
+        <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+            <scope>provided</scope>
+		</dependency>
     </dependencies>
 
     <profiles>
@@ -130,7 +136,7 @@
                     <charset>UTF-8</charset>
                     <uriEncoding>UTF-8</uriEncoding>
                     <port>8081</port>
-                    <path>/</path>
+                    <path>/cff</path>
                 </configuration>
             </plugin>
 
