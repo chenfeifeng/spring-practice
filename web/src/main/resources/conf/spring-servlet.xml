@@ -38,9 +38,9 @@
          </property>  
      </bean>
      
-     <mvc:view-controller path="/" view-name="redirect:/index.jsp"/>
-     <mvc:view-controller path="/404" view-name="redirect:/404.html"/>
-     <mvc:view-controller path="/500" view-name="redirect:/500.html"/>
+     <mvc:view-controller path="/" view-name="redirect:/index.jsp"></mvc:view-controller>
+     <mvc:view-controller path="/404" view-name="redirect:/404.html"></mvc:view-controller>
+     <mvc:view-controller path="/500" view-name="redirect:/500.html"></mvc:view-controller>
      
      
      <mvc:resources location="/" mapping="/**/*.html"/>
